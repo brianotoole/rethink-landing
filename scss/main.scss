@@ -1,9 +1,11 @@
 // Main.scss: Table of contents 
 // Variables
 
-$blue: #12ace3; //brand main
-$black: #232324; //brand accent
-$gray: #ccc;
+$blue: #03263d; //brand main
+$black: #232324; //accent
+$lightblue: #62cbe9; //accent
+$green: #6fb860; //accent
+$gray: #f1f1f3;
 
 // Typography
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|400,700');
@@ -14,7 +16,6 @@ $body: 'Raleway', Verdana, Arial;
 // Vendor
 @import "normalize";
 @import "bootstrap-grid";
-//@import "linearicons"; //linearicons.com/free#cheat-sheet
 
 // Layout
 @import "base";

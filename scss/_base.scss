@@ -75,9 +75,34 @@ img {
 	margin-right: auto;
 	padding-right: 20px;
 	padding-left: 20px;
+}
+
+.centered {
+	max-width: 75%;
+	margin: 0 auto;
+	padding: 4em 0;
+	text-align: center;
 	
 	@media (max-width: 768px) {
-		padding-left: 4.5%;
-		padding-right: 4.5%;
+		max-width: 100%;
+	}
+}
+
+.hasIndention {
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		border-color: $blue rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+		border-image: none;
+		border-style: solid;
+		border-width: 30px 30px 0;
+		bottom: -30px;
+	    height: 0;
+	    left: 50%;
+	    margin-left: -30px;
+	    width: 0;
+	    z-index: 1000;
 	}
 }

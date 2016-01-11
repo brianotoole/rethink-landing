@@ -2,28 +2,96 @@
 # Layout
 --------------------------------------------------------------*/
 // Header layout
-.landing {
+header {
 	width: 100%;
 	min-width: 320px;
+	height: 120px;
 	position: fixed;
 	z-index: 1000;
 	top: 0;
-	transition: transform 300ms cubic-bezier(0.4, 0.01, 0.165, 0.99);
+	background: white;
+	box-shadow: 0 4px rgba(0, 0, 0, 0.01);
 	
 	&.small {
 		transform: translateY(-90px);
 	}
 	
-	/*img,svg {
-		transform: scale(0.6) translateY(10px);
-		transition: transform 300ms cubic-bezier(0.4, 0.01, 0.165, 0.99);
-		transform-origin: bottom left;
-	}*/
+	img.logo {
+
+		@media (max-width: 768px) {
+			display: block;
+			max-width: 100%;
+			margin: 0 auto;
+		}
+	}
 }
 
 // Body layout
 main {
-	margin-top: 150px; //header's height
+	margin-top: 120px; //header height
 	position: relative;
+	background: $blue;
+}
+
+// Section 1
+.intro {
+	background: url('https://placeimg.com/1100/480/grayscale');
+	vertical-align: middle;
+	background-size: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	height: auto;
+	
+	@media (min-width: 768px) {
+		min-height: 375px;
+	}	
+	
+	.heading {
+		
+	}
+	
+	h1 {
+		text-transform: uppercase;
+		text-align: center;
+		color: white;
+	}
+}
+
+// Section 2
+.text {
+	color: $black;
+	background: white;
+	
+	span {
+		font-size: 1.25em;
+	}
+}
+
+// Section 3
+.scroll {
+	color: $black;
+	background: $blue;
+	background: url('https://placeimg.com/1100/480/nature');
+	vertical-align: middle;
+	background-size: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	height: auto;
+	
+	@media (min-width: 768px) {
+		min-height: 250px;
+	}
+	
+	h4 {
+		color: $green;
+	}
+	h3 {
+		color: white;
+	}
+}
+
+// Section 4
+.zillow {
+	background: white;
 }
 

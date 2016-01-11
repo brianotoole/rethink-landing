@@ -92,6 +92,8 @@ main {
 
 // Section 4
 .zillow {
+	position: relative;
 	background: white;
+	z-index: 1001;
 }
 

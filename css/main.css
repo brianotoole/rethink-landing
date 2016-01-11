@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway|400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway|200,700");
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -458,7 +458,7 @@ td, th { padding: 0; }
 --------------------------------------------------------------*/
 * { box-sizing: border-box; }
 
-body { min-width: 320px; font-size: 100%; font-family: "Raleway", Verdana, Arial; font-weight: 300; }
+body { min-width: 320px; font-size: 100%; font-family: "Raleway", Verdana, Arial; font-weight: 400; }
 
 a { color: #03263d; -webkit-transition: color 200ms; transition: color 200ms; }
 
@@ -466,7 +466,19 @@ a:hover { color: #043555; }
 
 a:focus { color: #043555; outline: none; }
 
-h1, h2, h3 { font-weight: 500; }
+h1 { font-size: 2.5em; }
+
+h2 { font-size: 2.25em; }
+
+h3 { font-size: 2em; }
+
+h4 { font-size: 1.75em; }
+
+h5 { font-size: 1.5em; }
+
+h6 { font-size: 1.25em; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Open Sans", serif, Helvetica; font-weight: 200; }
 
 p { line-height: 1.5; font-size: 1em; margin: 0; }
 
@@ -493,6 +505,10 @@ img.top { margin-top: 0; }
 .hasIndention { position: relative; }
 
 .hasIndention:after { content: ''; position: absolute; border-color: #03263d transparent transparent; -webkit-border-image: none; -o-border-image: none; border-image: none; border-style: solid; border-width: 30px 30px 0; bottom: -30px; height: 0; left: 50%; margin-left: -30px; width: 0; z-index: 1000; }
+
+.hasScroll:before { content: ''; display: block; position: relative; margin: 0 auto; width: 125px; height: 125px; background: red; border-radius: 50%; bottom: 62.5px; background: white; border: 7px solid #f1f1f3; padding: 7px; cursor: pointer; opacity: 1; }
+
+.hasScroll:after { content: ''; position: absolute; border-color: #62cbe9 transparent transparent; -webkit-border-image: none; -o-border-image: none; border-image: none; border-style: solid; border-width: 30px 30px 0; top: -10px; height: 0; left: 50%; margin-left: -30px; width: 0; cursor: pointer; z-index: 1000; }
 
 /*--------------------------------------------------------------
 # Layout
@@ -523,5 +539,5 @@ main { margin-top: 120px; position: relative; background: #03263d; }
 
 .scroll h3 { color: white; }
 
-.zillow { background: white; }
+.zillow { position: relative; background: white; z-index: 1001; }
 /*# sourceMappingURL=main.css.map */

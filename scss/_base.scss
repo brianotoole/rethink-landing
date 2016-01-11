@@ -9,7 +9,7 @@ body {
 	min-width: 320px;
 	font-size: 100%;
 	font-family: $body;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 a {
@@ -25,9 +25,28 @@ a {
 		outline: none;
 	}
 }
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 2.25em;
+}
+h3 {
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.75em;
+}
+h5 {
+    font-size: 1.5em;
+}
+h6 {
+    font-size: 1.25em;
+}
 
-h1,h2,h3 {
-	font-weight: 500;
+h1,h2,h3,h4,h5,h6 {
+	font-family: $heading;
+	font-weight: 200;
 }
 
 p {
@@ -106,3 +125,38 @@ img {
 	    z-index: 1000;
 	}
 }
+
+.hasScroll {
+	&:before {
+		content: '';
+		display: block;
+		position: relative;
+		margin: 0 auto;
+		width: 125px;
+		height: 125px;
+		background: red;
+		border-radius: 50%;
+		bottom: 62.5px;
+		background: white;
+		border: 7px solid $gray;
+		padding: 7px;
+		cursor: pointer;
+		opacity: 1;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		border-color: $lightblue rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+		border-image: none;
+		border-style: solid;
+		border-width: 30px 30px 0;
+		top: -10px;
+	    height: 0;
+	    left: 50%;
+	    margin-left: -30px;
+	    width: 0;
+	    cursor: pointer;
+	    z-index: 1000;
+	}
+}
+

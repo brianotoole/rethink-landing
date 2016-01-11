@@ -1,33 +1,15 @@
 // Main.scss: Table of contents 
-
 // Variables
 
-// Brand Colors
-$main: #3D4856;
-$accent: #043d67;
-$accent2: #1C82D0;
-
-// Mixins
-@mixin breakpoint($point) { //media query breakpoint; for usage within layout stylesheet
-  @if $point == xl {
-    @media (min-width: 1600px) { @content; } //"xl" = above 1600
-  }
-  @else if $point == sm {
-    @media (min-width: 768px)  { @content; } //"sm" = above 768
-  }
-  @else if $point == xs {
-    @media (max-width: 768px)  { @content; } // "xs" = below 768
-  }
-  @else if $point == xxs {
-    @media (max-width: 480px)  { @content; } // "xxs" = below 480
-  }
-}
+$blue: #12ace3; //brand main
+$black: #232324; //brand accent
+$gray: #ccc;
 
 // Typography
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Cardo|400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|400,700');
 
-$heading: 'Josefin Sans', serif, Helvetica;
-$body: 'Cardo', Verdana, Arial;
+$heading: 'Open Sans', serif, Helvetica;
+$body: 'Raleway', Verdana, Arial;
 
 // Vendor
 @import "normalize";
@@ -36,3 +18,4 @@ $body: 'Cardo', Verdana, Arial;
 
 // Layout
 @import "base";
+@import "layout";

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Cardo|400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway|400,700");
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -456,4 +456,44 @@ td, th { padding: 0; }
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
+* { box-sizing: border-box; }
+
+body { min-width: 320px; font-size: 100%; font-family: "Raleway", Verdana, Arial; font-weight: 300; }
+
+a { color: #12ace3; -webkit-transition: color 200ms; transition: color 200ms; }
+
+a:hover { color: #21b8ed; }
+
+a:focus { color: #21b8ed; outline: none; }
+
+h1, h2, h3 { font-weight: 500; }
+
+p { line-height: 1.5; font-size: 1em; margin: 0; }
+
+p + p { margin-top: 1em; }
+
+ul { margin: 1em 0; padding-left: 0.7em; list-style-position: inside; }
+
+li { line-height: 1.5; }
+
+img { max-width: 100%; height: auto; }
+
+img.left { float: left; margin: 1em 1em 1em 0; }
+
+img.right { float: right; margin: 1em 0 1em 1em; }
+
+img.top { margin-top: 0; }
+
+.contain { height: 100%; max-width: 1100px; margin-left: auto; margin-right: auto; padding-right: 20px; padding-left: 20px; }
+
+@media (max-width: 768px) { .contain { padding-left: 4.5%; padding-right: 4.5%; } }
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+.landing { width: 100%; min-width: 320px; position: fixed; z-index: 1000; top: 0; -webkit-transition: -webkit-transform 300ms cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: transform 300ms cubic-bezier(0.4, 0.01, 0.165, 0.99); /*img,svg { transform: scale(0.6) translateY(10px); transition: transform 300ms cubic-bezier(0.4, 0.01, 0.165, 0.99); transform-origin: bottom left; }*/ }
+
+.landing.small { -webkit-transform: translateY(-90px); -ms-transform: translateY(-90px); transform: translateY(-90px); }
+
+main { margin-top: 150px; position: relative; }
 /*# sourceMappingURL=main.css.map */

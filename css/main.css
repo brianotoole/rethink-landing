@@ -559,15 +559,19 @@ img.top { margin-top: 0; }
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-header { width: 100%; min-width: 320px; height: 120px; position: fixed; z-index: 1000; top: 0; background-color: white; box-shadow: 0 4px rgba(0, 0, 0, 0.01); }
+header { width: 100%; min-width: 320px; height: 120px; position: fixed; z-index: 1003; top: 0; background-color: white; box-shadow: 0 4px rgba(0, 0, 0, 0.01); opacity: 0.85; }
 
 header.small { -webkit-transform: translateY(-90px); -ms-transform: translateY(-90px); transform: translateY(-90px); }
 
 @media (max-width: 768px) { header img.logo { display: block; max-width: 100%; margin: 0 auto; } }
 
-main { margin-top: 120px; position: relative; background-color: #03263d; }
+main { position: relative; background-color: #03263d; }
 
-.intro { background-image: -webkit-linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.7)), url("https://placeimg.com/1100/480/grayscale"); background-image: linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.7)), url("https://placeimg.com/1100/480/grayscale"); background-size: cover; background-position: center center; min-height: 375px; }
+.intro { background-image: -webkit-linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.01)), url("../img/hero.jpg"); background-image: linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.01)), url("../img/hero.jpg"); background-size: cover; background-position: center center; min-height: 515px; margin-bottom: 30px; }
+
+.intro.hasIndention:after { bottom: -60px; }
+
+.intro .centered { padding-top: 13em; }
 
 .intro h1 { text-transform: uppercase; text-align: center; color: white; }
 
@@ -581,7 +585,7 @@ main { margin-top: 120px; position: relative; background-color: #03263d; }
 
 .scroll h3 { color: white; }
 
-.zillow { position: relative; background: white; z-index: 1001; }
+.zillow { position: relative; background: white; }
 
 .padded { padding: 3em; }
 
@@ -605,7 +609,19 @@ main { margin-top: 120px; position: relative; background-color: #03263d; }
 
 @media (max-width: 768px) { .demo .btn { max-width: 100%; } }
 
-footer { background-color: white; color: #03263d; margin: 0 auto; padding-top: 3em; padding-bottom: 3em; }
+footer { background-color: white; color: #03263d; margin: 0 auto; padding-top: 3em; padding-bottom: 0; }
 
 footer img, footer svg { display: block; max-width: 100%; margin: 0 auto; }
+
+footer .back-to-top { text-align: right; }
+
+@media (max-width: 768px) { footer .back-to-top { text-align: center; } }
+
+footer .back-to-top a { background-color: #f1f1f3; padding: 22px 30px; text-decoration: none; border-top-left-radius: 10px; border-top-right-radius: 10px; box-shadow: 0 4px rgba(0, 0, 0, 0.01); -webkit-transition: all linear 0.3s; transition: all linear 0.3s; }
+
+footer .back-to-top a:hover { background-color: #c8c8d0; }
+
+footer .back-to-top i { color: #c8c8d0; font-size: 1.5em; -webkit-transition: all linear 0.3s; transition: all linear 0.3s; }
+
+footer .back-to-top i:hover { color: #62cbe9; }
 /*# sourceMappingURL=main.css.map */

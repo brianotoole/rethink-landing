@@ -7,10 +7,11 @@ header {
 	min-width: 320px;
 	height: 120px;
 	position: fixed;
-	z-index: 1000;
+	z-index: 1003;
 	top: 0;
 	background-color: white;
 	box-shadow: 0 4px rgba(0, 0, 0, 0.01);
+	opacity: 0.85;
 	
 	&.small {
 		transform: translateY(-90px);
@@ -28,20 +29,26 @@ header {
 
 // Body layout
 main {
-	margin-top: 120px; //header height
 	position: relative;
 	background-color: $blue;
 }
 
 // Section 1
 .intro {
-    background-image: linear-gradient(rgba($blue,0.7),rgba($blue,0.7)), url('https://placeimg.com/1100/480/grayscale');
+    background-image: linear-gradient(rgba($blue,0.7),rgba($blue,0.01)), url('../img/hero.jpg');
 	background-size: cover;
     background-position: center center;
-	min-height: 375px;
+	min-height: 515px;
+	margin-bottom: 30px;
 	
-	.heading {
-		
+	&.hasIndention {
+		&:after {
+			bottom: -60px;
+	}
+}
+	
+	.centered {
+		padding-top: 13em;
 	}
 	
 	h1 {
@@ -82,7 +89,6 @@ main {
 .zillow {
 	position: relative;
 	background: white;
-	z-index: 1001;
 }
 
 .padded {
@@ -148,12 +154,43 @@ footer {
 	color: $blue;
 	margin: 0 auto;
 	padding-top: 3em;
-	padding-bottom: 3em;
+	padding-bottom: 0;
 	
 	img,svg {
 		display: block;
 		max-width: 100%;
 		margin: 0 auto;
+	}
+	
+	.back-to-top {
+		text-align: right;
+		
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+		
+		a {
+			background-color: $gray;
+			padding: 22px 30px;
+			text-decoration: none;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            box-shadow: 0 4px rgba(0, 0, 0, 0.01);
+            transition: all linear 0.3s;
+            
+            &:hover {
+	            background-color: darken($gray, 15%);
+            }
+		}
+		i {
+			color: darken($gray, 15%);
+			font-size: 1.5em;
+			transition: all linear 0.3s;
+			
+			&:hover {
+	            color: $lightblue;
+            }
+		}
 	}
 
 }

@@ -9,7 +9,7 @@ header {
 	position: fixed;
 	z-index: 1000;
 	top: 0;
-	background: white;
+	background-color: white;
 	box-shadow: 0 4px rgba(0, 0, 0, 0.01);
 	
 	&.small {
@@ -30,7 +30,7 @@ header {
 main {
 	margin-top: 120px; //header height
 	position: relative;
-	background: $blue;
+	background-color: $blue;
 }
 
 // Section 1
@@ -54,7 +54,7 @@ main {
 // Section 2
 .text {
 	color: $black;
-	background: white;
+	background-color: white;
 	
 	span {
 		font-size: 1.25em;
@@ -64,7 +64,7 @@ main {
 // Section 3
 .scroll {
 	color: $black;
-	background: $blue;
+	background-color: $blue;
 	background-image: linear-gradient(rgba($blue,0.7),rgba($blue,0.8)), url('https://placeimg.com/1100/480/nature');
 	background-size: cover;
     background-position: center center;
@@ -84,4 +84,22 @@ main {
 	background: white;
 	z-index: 1001;
 }
+
+.padded {
+	padding: 3em;
+	
+	@media (max-width: 768px) {
+		padding: 0;
+	}
+}
+
+// Section 5
+.prospects {
+	background-color: $gray;
+	
+	h3 {
+		color: $lightblue;
+	}
+}
+
 

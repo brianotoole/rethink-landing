@@ -36,6 +36,7 @@ h3 {
 }
 h4 {
     font-size: 1.75em;
+    color: $blue;
 }
 h5 {
     font-size: 1.5em;
@@ -48,6 +49,13 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: $heading;
 	font-weight: 200;
 }
+
+//Color classes
+.blue { color: #03263d; } //brand main
+.black { color: #232324; } //accent
+.lightblue { color: #62cbe9; } //accent
+.green { color: #6fb860; } //accent
+.gray { color: #f1f1f3; } //accent
 
 p {
 	line-height: 1.5;
@@ -67,6 +75,9 @@ ul {
 
 li {
 	line-height: 1.5;
+	margin: 1.5em 0;
+	list-style-type: none;
+	color: $green;
 }
 
 img {
@@ -86,6 +97,37 @@ img {
 	}
 }
 
+// Buttons
+.btn {
+	padding: 14px 25px;
+	font-family: $heading;
+	font-size: 1.5em;
+	font-weight: 700;
+	-webkit-appearance: none;
+    position: relative;
+    text-transform: uppercase;
+    background: white;
+    color: $blue;
+    border: 1px solid $lightblue;
+    transition: all linear 0.3s;
+    text-decoration: none;
+    
+    &.lightblue {
+		background: transparent;
+	    border-color: $lightblue;
+	    &:hover {
+		    border-color: $blue;
+	    }
+    }
+    
+	@media (max-width: 768px) {
+		width: 100%;
+		display: block;
+	}
+    
+
+}
+
 // Major classes
 .contain {
 	height: 100%;
@@ -99,7 +141,8 @@ img {
 .centered {
 	max-width: 75%;
 	margin: 0 auto;
-	padding: 4em 0;
+	padding-top: 4em;
+	padding-bottom: 4em;
 	text-align: center;
 	
 	@media (max-width: 768px) {

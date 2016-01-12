@@ -472,7 +472,7 @@ h2 { font-size: 2.25em; }
 
 h3 { font-size: 2em; }
 
-h4 { font-size: 1.75em; }
+h4 { font-size: 1.75em; color: #03263d; }
 
 h5 { font-size: 1.5em; }
 
@@ -480,13 +480,23 @@ h6 { font-size: 1.25em; }
 
 h1, h2, h3, h4, h5, h6 { font-family: "Open Sans", serif, Helvetica; font-weight: 200; }
 
+.blue { color: #03263d; }
+
+.black { color: #232324; }
+
+.lightblue { color: #62cbe9; }
+
+.green { color: #6fb860; }
+
+.gray { color: #f1f1f3; }
+
 p { line-height: 1.5; font-size: 1em; margin: 0; }
 
 p + p { margin-top: 1em; }
 
 ul { margin: 1em 0; padding-left: 0.7em; list-style-position: inside; }
 
-li { line-height: 1.5; }
+li { line-height: 1.5; margin: 1.5em 0; list-style-type: none; color: #6fb860; }
 
 img { max-width: 100%; height: auto; }
 
@@ -496,9 +506,17 @@ img.right { float: right; margin: 1em 0 1em 1em; }
 
 img.top { margin-top: 0; }
 
+.btn { padding: 14px 25px; font-family: "Open Sans", serif, Helvetica; font-size: 1.5em; font-weight: 700; -webkit-appearance: none; position: relative; text-transform: uppercase; background: white; color: #03263d; border: 1px solid #62cbe9; -webkit-transition: all linear 0.3s; transition: all linear 0.3s; text-decoration: none; }
+
+.btn.lightblue { background: transparent; border-color: #62cbe9; }
+
+.btn.lightblue:hover { border-color: #03263d; }
+
+@media (max-width: 768px) { .btn { width: 100%; display: block; } }
+
 .contain { height: 100%; max-width: 1100px; margin-left: auto; margin-right: auto; padding-right: 20px; padding-left: 20px; }
 
-.centered { max-width: 75%; margin: 0 auto; padding: 4em 0; text-align: center; }
+.centered { max-width: 75%; margin: 0 auto; padding-top: 4em; padding-bottom: 4em; text-align: center; }
 
 @media (max-width: 768px) { .centered { max-width: 100%; } }
 
@@ -521,27 +539,35 @@ img.top { margin-top: 0; }
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-header { width: 100%; min-width: 320px; height: 120px; position: fixed; z-index: 1000; top: 0; background: white; box-shadow: 0 4px rgba(0, 0, 0, 0.01); }
+header { width: 100%; min-width: 320px; height: 120px; position: fixed; z-index: 1000; top: 0; background-color: white; box-shadow: 0 4px rgba(0, 0, 0, 0.01); }
 
 header.small { -webkit-transform: translateY(-90px); -ms-transform: translateY(-90px); transform: translateY(-90px); }
 
 @media (max-width: 768px) { header img.logo { display: block; max-width: 100%; margin: 0 auto; } }
 
-main { margin-top: 120px; position: relative; background: #03263d; }
+main { margin-top: 120px; position: relative; background-color: #03263d; }
 
 .intro { background-image: -webkit-linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.7)), url("https://placeimg.com/1100/480/grayscale"); background-image: linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.7)), url("https://placeimg.com/1100/480/grayscale"); background-size: cover; background-position: center center; min-height: 375px; }
 
 .intro h1 { text-transform: uppercase; text-align: center; color: white; }
 
-.text { color: #232324; background: white; }
+.text { color: #232324; background-color: white; }
 
 .text span { font-size: 1.25em; }
 
-.scroll { color: #232324; background: #03263d; background-image: -webkit-linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.8)), url("https://placeimg.com/1100/480/nature"); background-image: linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.8)), url("https://placeimg.com/1100/480/nature"); background-size: cover; background-position: center center; min-height: 250px; }
+.scroll { color: #232324; background-color: #03263d; background-image: -webkit-linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.8)), url("https://placeimg.com/1100/480/nature"); background-image: linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.8)), url("https://placeimg.com/1100/480/nature"); background-size: cover; background-position: center center; min-height: 250px; }
 
 .scroll h4 { color: #6fb860; }
 
 .scroll h3 { color: white; }
 
 .zillow { position: relative; background: white; z-index: 1001; }
+
+.padded { padding: 3em; }
+
+@media (max-width: 768px) { .padded { padding: 0; } }
+
+.prospects { background-color: #f1f1f3; }
+
+.prospects h3 { color: #62cbe9; }
 /*# sourceMappingURL=main.css.map */

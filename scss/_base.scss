@@ -25,24 +25,44 @@ a {
 		outline: none;
 	}
 }
+
+/* Typography */
 h1 {
     font-size: 2.5em;
+    @media (max-width: 768px) {
+	    font-size: 2em;
+    }
 }
 h2 {
     font-size: 2.25em;
+    @media (max-width: 768px) {
+	    font-size: 1.75em;
+    }
 }
 h3 {
     font-size: 2em;
+    @media (max-width: 768px) {
+	    font-size: 1.5em;
+    }
 }
 h4 {
     font-size: 1.75em;
     color: $blue;
+    @media (max-width: 768px) {
+	    font-size: 1.25em;
+    }
 }
 h5 {
     font-size: 1.5em;
+    @media (max-width: 768px) {
+	    font-size: 1.125em;
+    }
 }
 h6 {
     font-size: 1.25em;
+    @media (max-width: 768px) {
+	    font-size: 1em;
+    }
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -50,7 +70,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 200;
 }
 
-//Color classes
+/* Color classes */
 .blue { color: #03263d; } //brand main
 .black { color: #232324; } //accent
 .lightblue { color: #62cbe9; } //accent
@@ -65,6 +85,10 @@ p {
 	+ p {
 		margin-top: 1em; 
 	}
+	
+	@media (max-width: 768px) {
+	    font-size: 0.9em;
+    }
 }
 
 ul {
@@ -97,9 +121,9 @@ img {
 	}
 }
 
-// Buttons
+/* Buttons */
 .btn {
-	padding: 14px 25px;
+	padding: 17px 75px;
 	font-family: $heading;
 	font-size: 1.5em;
 	font-weight: 700;
@@ -108,7 +132,7 @@ img {
     text-transform: uppercase;
     background: white;
     color: $blue;
-    border: 1px solid $lightblue;
+    border: 2px solid $lightblue;
     transition: all linear 0.3s;
     text-decoration: none;
     
@@ -119,16 +143,26 @@ img {
 		    border-color: $blue;
 	    }
     }
+    &.white {
+		background: transparent;
+	    border-color: white;
+	    color: white;
+	    &:hover {
+		    border-color: $lightblue;
+		    color: white;
+	    }
+    }
     
 	@media (max-width: 768px) {
 		width: 100%;
 		display: block;
+		font-size: 1em;
 	}
     
 
 }
 
-// Major classes
+/* Major classes */
 .contain {
 	height: 100%;
 	max-width: 1100px;
@@ -211,4 +245,3 @@ img {
 		}
 	}
 }
-

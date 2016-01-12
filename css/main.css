@@ -466,20 +466,34 @@ a:hover { color: #043555; }
 
 a:focus { color: #043555; outline: none; }
 
+/* Typography */
 h1 { font-size: 2.5em; }
+
+@media (max-width: 768px) { h1 { font-size: 2em; } }
 
 h2 { font-size: 2.25em; }
 
+@media (max-width: 768px) { h2 { font-size: 1.75em; } }
+
 h3 { font-size: 2em; }
+
+@media (max-width: 768px) { h3 { font-size: 1.5em; } }
 
 h4 { font-size: 1.75em; color: #03263d; }
 
+@media (max-width: 768px) { h4 { font-size: 1.25em; } }
+
 h5 { font-size: 1.5em; }
+
+@media (max-width: 768px) { h5 { font-size: 1.125em; } }
 
 h6 { font-size: 1.25em; }
 
+@media (max-width: 768px) { h6 { font-size: 1em; } }
+
 h1, h2, h3, h4, h5, h6 { font-family: "Open Sans", serif, Helvetica; font-weight: 200; }
 
+/* Color classes */
 .blue { color: #03263d; }
 
 .black { color: #232324; }
@@ -494,6 +508,8 @@ p { line-height: 1.5; font-size: 1em; margin: 0; }
 
 p + p { margin-top: 1em; }
 
+@media (max-width: 768px) { p { font-size: 0.9em; } }
+
 ul { margin: 1em 0; padding-left: 0.7em; list-style-position: inside; }
 
 li { line-height: 1.5; margin: 1.5em 0; list-style-type: none; color: #6fb860; }
@@ -506,14 +522,20 @@ img.right { float: right; margin: 1em 0 1em 1em; }
 
 img.top { margin-top: 0; }
 
-.btn { padding: 14px 25px; font-family: "Open Sans", serif, Helvetica; font-size: 1.5em; font-weight: 700; -webkit-appearance: none; position: relative; text-transform: uppercase; background: white; color: #03263d; border: 1px solid #62cbe9; -webkit-transition: all linear 0.3s; transition: all linear 0.3s; text-decoration: none; }
+/* Buttons */
+.btn { padding: 17px 75px; font-family: "Open Sans", serif, Helvetica; font-size: 1.5em; font-weight: 700; -webkit-appearance: none; position: relative; text-transform: uppercase; background: white; color: #03263d; border: 2px solid #62cbe9; -webkit-transition: all linear 0.3s; transition: all linear 0.3s; text-decoration: none; }
 
 .btn.lightblue { background: transparent; border-color: #62cbe9; }
 
 .btn.lightblue:hover { border-color: #03263d; }
 
-@media (max-width: 768px) { .btn { width: 100%; display: block; } }
+.btn.white { background: transparent; border-color: white; color: white; }
 
+.btn.white:hover { border-color: #62cbe9; color: white; }
+
+@media (max-width: 768px) { .btn { width: 100%; display: block; font-size: 1em; } }
+
+/* Major classes */
 .contain { height: 100%; max-width: 1100px; margin-left: auto; margin-right: auto; padding-right: 20px; padding-left: 20px; }
 
 .centered { max-width: 75%; margin: 0 auto; padding-top: 4em; padding-bottom: 4em; text-align: center; }
@@ -570,4 +592,22 @@ main { margin-top: 120px; position: relative; background-color: #03263d; }
 .prospects { background-color: #f1f1f3; }
 
 .prospects h3 { color: #62cbe9; }
+
+.mls { background-color: white; }
+
+.what-else { background-color: #f1f1f3; }
+
+.what-else .quote { color: #03263d; text-align: center; padding: 3em 0; }
+
+@media (max-width: 768px) { .what-else .quote { padding: 1.5em 0; } }
+
+.demo { background-color: #03263d; color: #62cbe9; padding-top: 1em; padding-bottom: 5em; text-align: center; text-transform: uppercase; }
+
+.demo .btn { display: block; max-width: 80%; margin: 0 auto; }
+
+@media (max-width: 768px) { .demo .btn { max-width: 100%; } }
+
+footer { background-color: white; color: #03263d; margin: 0 auto; padding-top: 3em; padding-bottom: 3em; }
+
+footer img, footer svg { display: block; max-width: 100%; margin: 0 auto; }
 /*# sourceMappingURL=main.css.map */

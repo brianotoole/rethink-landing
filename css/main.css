@@ -458,7 +458,7 @@ td, th { padding: 0; }
 --------------------------------------------------------------*/
 * { box-sizing: border-box; }
 
-body { min-width: 320px; font-size: 100%; font-family: "Open Sans", serif, Helvetica; font-weight: 400; }
+body { min-width: 320px; font-size: 100%; font-family: "Open Sans", serif, Helvetica; font-weight: 400; overflow-x: hidden; }
 
 a { color: #03263d; -webkit-transition: color 200ms; transition: color 200ms; }
 
@@ -523,15 +523,15 @@ img.right { float: right; margin: 1em 0 1em 1em; }
 img.top { margin-top: 0; }
 
 /* Buttons */
-.btn { padding: 17px 75px; font-family: "Raleway", Verdana, Arial; font-size: 1.5em; font-weight: 700; -webkit-appearance: none; position: relative; text-transform: uppercase; background: white; color: #03263d; border: 2px solid #62cbe9; -webkit-transition: all linear 0.3s; transition: all linear 0.3s; text-decoration: none; }
+.btn { padding: 22px 75px; font-family: "Raleway", Verdana, Arial; font-size: 1.5em; font-weight: 700; -webkit-appearance: none; position: relative; text-transform: uppercase; background: white; color: #03263d; border: 2px solid #63cbe7; -webkit-transition: all linear 0.3s; transition: all linear 0.3s; text-decoration: none; }
 
-.btn.lightblue { background: transparent; border-color: #62cbe9; }
+.btn.lightblue { background: transparent; border-color: #63cbe7; }
 
 .btn.lightblue:hover { border-color: #03263d; }
 
 .btn.white { background: transparent; border-color: white; color: white; }
 
-.btn.white:hover { border-color: #62cbe9; color: white; }
+.btn.white:hover { border-color: #63cbe7; color: white; }
 
 @media (max-width: 768px) { .btn { width: 100%; display: block; font-size: 1em; } }
 
@@ -546,7 +546,7 @@ img.top { margin-top: 0; }
 
 .hasIndention { position: relative; }
 
-.hasIndention:after { content: ''; position: absolute; border-color: #03263d transparent transparent; -webkit-border-image: none; -o-border-image: none; border-image: none; border-style: solid; border-width: 30px 30px 0; bottom: -30px; height: 0; left: 50%; margin-left: -30px; width: 0; z-index: 1000; }
+.hasIndention:after { content: ''; position: absolute; border-color: #03263d transparent transparent; -webkit-border-image: none; -o-border-image: none; border-image: none; border-style: solid; border-width: 30px 30px 0; bottom: -29px; height: 0; left: 50%; margin-left: -30px; width: 0; z-index: 1000; }
 
 .scrollArea { position: absolute; width: 100%; margin-top: -62.5px; }
 
@@ -556,16 +556,18 @@ img.top { margin-top: 0; }
 
 .scrollArea .scrollCircle:after { content: ''; width: 135px; height: 64px; background: white; position: absolute; top: 56px; left: -11px; }
 
-.scrollArea .scrollCircle .icon { position: relative; top: calc(50% - 20px); text-align: center; color: #62cbe9; }
+.scrollArea .scrollCircle .icon { position: relative; top: calc(50% - 20px); text-align: center; color: #63cbe7; }
 
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-header { width: 100%; min-width: 320px; height: 120px; position: fixed; z-index: 1009; top: 0; background-color: white; box-shadow: 0 4px rgba(0, 0, 0, 0.01); opacity: 0.85; }
+header { width: 100%; min-width: 320px; height: 90px; position: fixed; z-index: 1009; top: 0; background-color: white; box-shadow: 0 2px rgba(0, 0, 0, 0.1); opacity: 0.85; }
 
 header.small { -webkit-transform: translateY(-90px); -ms-transform: translateY(-90px); transform: translateY(-90px); }
 
-@media (max-width: 768px) { header img.logo { display: block; max-width: 100%; margin: 0 auto; } }
+header img.logo { margin-top: 0.5em; }
+
+@media (max-width: 768px) { header img.logo { display: block; max-width: 100%; margin-left: auto; margin-right: auto; } }
 
 main { position: relative; background-color: #03263d; }
 
@@ -591,13 +593,19 @@ main { position: relative; background-color: #03263d; }
 
 .zillow .contain { padding-top: 5em; }
 
+@media (max-width: 768px) { .zillow .contain { padding-top: 1em; } }
+
 @media (max-width: 768px) { .zillow .absolute { position: relative; top: auto; left: auto; margin: 0 auto; } }
 
 .photo-overlay { position: absolute; background-image: url("../img/screenshot_prospectmanager_large.png"); background-repeat: no-repeat; background-position: center 105px; width: 100%; height: 100%; min-height: 505px; z-index: 1003; }
 
+@media (max-width: 768px) { .photo-overlay { position: relative; background-position: top center; background-size: contain; min-height: 115px; } }
+
 .prospects { background-color: #f1f1f3; padding-top: 6em; min-height: 810px; }
 
-.prospects h3 { color: #62cbe9; }
+@media (max-width: 768px) { .prospects { padding-top: 1em; } }
+
+.prospects h3 { color: #63cbe7; }
 
 .prospects .absolute { top: -115px; left: -4px; }
 
@@ -605,23 +613,33 @@ main { position: relative; background-color: #03263d; }
 
 .mls { background-color: white; min-height: 470px; }
 
+@media (max-width: 768px) { .mls .absolute { position: relative; } }
+
 .what-else { background-color: #f1f1f3; padding-top: 7em; }
 
+@media (max-width: 768px) { .what-else { padding-top: 1em; } }
+
 .what-else .icons { padding-top: 5em; }
+
+@media (max-width: 768px) { .what-else .icons { padding-top: 1em; } }
 
 .what-else .quote { color: #03263d; text-align: center; padding: 3em 0; }
 
 @media (max-width: 768px) { .what-else .quote { padding: 1.5em 0; } }
 
-.demo { background-color: #03263d; color: #62cbe9; padding-top: 1em; padding-bottom: 5em; text-align: center; text-transform: uppercase; }
+.demo { background-color: #03263d; color: #63cbe7; padding-top: 1em; padding-bottom: 5em; text-align: center; text-transform: uppercase; }
 
 .demo .btn { display: block; max-width: 80%; margin: 0 auto; }
 
 @media (max-width: 768px) { .demo .btn { max-width: 100%; } }
 
+.demo span { padding-left: 5px; }
+
 footer { background-color: white; color: #03263d; margin: 0 auto; padding-top: 3em; padding-bottom: 0; }
 
 footer img, footer svg { display: block; max-width: 100%; margin: 0 auto; }
+
+@media (max-width: 768px) { footer img, footer svg { padding-bottom: 2em; } }
 
 footer .back-to-top { text-align: right; }
 
@@ -633,5 +651,5 @@ footer .back-to-top a:hover { background-color: #c8c8d0; }
 
 footer .back-to-top i { color: #c8c8d0; font-size: 1.5em; -webkit-transition: all linear 0.3s; transition: all linear 0.3s; }
 
-footer .back-to-top i:hover { color: #62cbe9; }
+footer .back-to-top i:hover { color: #63cbe7; }
 /*# sourceMappingURL=main.css.map */

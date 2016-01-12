@@ -10,6 +10,7 @@ body {
 	font-size: 100%;
 	font-family: $body;
 	font-weight: 400;
+    overflow-x: hidden;
 }
 
 a {
@@ -123,7 +124,7 @@ img {
 
 /* Buttons */
 .btn {
-	padding: 17px 75px;
+	padding: 22px 75px;
 	font-family: $heading;
 	font-size: 1.5em;
 	font-weight: 700;
@@ -199,7 +200,7 @@ img {
 		border-image: none;
 		border-style: solid;
 		border-width: 30px 30px 0;
-		bottom: -30px;
+		bottom: -29px;
 	    height: 0;
 	    left: 50%;
 	    margin-left: -30px;

@@ -508,11 +508,13 @@ img.top { margin-top: 0; }
 
 .scrollArea { position: absolute; width: 100%; margin-top: -62.5px; }
 
-.scrollArea .scrollCircle { position: relative; margin: 0 auto; width: 125px; height: 125px; background: white; border-radius: 50%; border: 7px solid #f1f1f3; padding: 7px; }
+.scrollArea .scrollCircle { position: relative; margin: 0 auto; width: 125px; height: 125px; background: white; border-radius: 50%; border: 7px solid #f1f1f3; padding: 7px; -webkit-transition: background 0.3s linear; transition: background 0.3s linear; }
+
+.scrollArea .scrollCircle:hover { background: #f1f1f3; }
 
 .scrollArea .scrollCircle:after { content: ''; width: 135px; height: 64px; background: white; position: absolute; top: 55px; left: -11px; }
 
-.scrollArea .scrollCircle .icon { text-align: center; color: #62cbe9; }
+.scrollArea .scrollCircle .icon { position: relative; top: calc(50% - 20px); text-align: center; color: #62cbe9; }
 
 .scrollArea .scrollCircle:hover { cursor: pointer; }
 
@@ -527,9 +529,7 @@ header.small { -webkit-transform: translateY(-90px); -ms-transform: translateY(-
 
 main { margin-top: 120px; position: relative; background: #03263d; }
 
-.intro { background: url("https://placeimg.com/1100/480/grayscale"); vertical-align: middle; background-size: 100%; background-position: 50% 50%; background-repeat: no-repeat; height: auto; }
-
-@media (min-width: 768px) { .intro { min-height: 375px; } }
+.intro { background-image: -webkit-linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.7)), url("https://placeimg.com/1100/480/grayscale"); background-image: linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.7)), url("https://placeimg.com/1100/480/grayscale"); background-size: cover; background-position: center center; min-height: 375px; }
 
 .intro h1 { text-transform: uppercase; text-align: center; color: white; }
 
@@ -537,9 +537,7 @@ main { margin-top: 120px; position: relative; background: #03263d; }
 
 .text span { font-size: 1.25em; }
 
-.scroll { color: #232324; background: #03263d; background: url("https://placeimg.com/1100/480/nature"); vertical-align: middle; background-size: 100%; background-position: 50% 50%; background-repeat: no-repeat; height: auto; }
-
-@media (min-width: 768px) { .scroll { min-height: 250px; } }
+.scroll { color: #232324; background: #03263d; background-image: -webkit-linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.8)), url("https://placeimg.com/1100/480/nature"); background-image: linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.8)), url("https://placeimg.com/1100/480/nature"); background-size: cover; background-position: center center; min-height: 250px; }
 
 .scroll h4 { color: #6fb860; }
 

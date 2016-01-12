@@ -140,6 +140,11 @@ img {
 		border-radius: 50%;
 		border: 7px solid $gray;
 		padding: 7px;
+		transition: background 0.3s linear;
+		
+		&:hover {
+			background: $gray;
+		}
 		
 		&:after { //cover up the border below
 			content: '';
@@ -152,6 +157,8 @@ img {
 		}
 		
 		.icon {
+			position: relative;
+			top: calc(50% - 20px);
 			text-align: center;
 			color: $lightblue;
 		}

@@ -35,16 +35,10 @@ main {
 
 // Section 1
 .intro {
-	background: url('https://placeimg.com/1100/480/grayscale');
-	vertical-align: middle;
-	background-size: 100%;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	height: auto;
-	
-	@media (min-width: 768px) {
-		min-height: 375px;
-	}	
+    background-image: linear-gradient(rgba($blue,0.7),rgba($blue,0.7)), url('https://placeimg.com/1100/480/grayscale');
+	background-size: cover;
+    background-position: center center;
+	min-height: 375px;
 	
 	.heading {
 		
@@ -71,16 +65,10 @@ main {
 .scroll {
 	color: $black;
 	background: $blue;
-	background: url('https://placeimg.com/1100/480/nature');
-	vertical-align: middle;
-	background-size: 100%;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	height: auto;
-	
-	@media (min-width: 768px) {
-		min-height: 250px;
-	}
+	background-image: linear-gradient(rgba($blue,0.7),rgba($blue,0.8)), url('https://placeimg.com/1100/480/nature');
+	background-size: cover;
+    background-position: center center;
+	min-height: 250px;
 	
 	h4 {
 		color: $green;

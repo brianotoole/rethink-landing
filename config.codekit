@@ -44,6 +44,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/icon_sold.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3813,
+		"inputAbbreviatedPath": "\/img\/icon_sold.png",
+		"outputAbbreviatedPath": "\/img\/icon_sold.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -62,6 +73,28 @@
 		"initialSize": 13744,
 		"inputAbbreviatedPath": "\/img\/screenshot_assign.png",
 		"outputAbbreviatedPath": "\/img\/screenshot_assign.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/screenshot_listings.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49799,
+		"inputAbbreviatedPath": "\/img\/screenshot_listings.png",
+		"outputAbbreviatedPath": "\/img\/screenshot_listings.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/screenshot_mls.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3326,
+		"inputAbbreviatedPath": "\/img\/screenshot_mls.png",
+		"outputAbbreviatedPath": "\/img\/screenshot_mls.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

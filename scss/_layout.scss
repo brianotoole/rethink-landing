@@ -96,17 +96,19 @@ main {
 	.contain {
 		padding-top: 5em;
 	}
+	
+	.absolute {
+		
+		@media (max-width: 768px) {
+			position: relative;
+			top: auto;
+			left: auto;
+			margin: 0 auto;
+		}
+	}
 }
 
-.onTop {
-	position: absolute;
-	z-index: 1004;
-	
-	@media (max-width: 768px) {
-		padding: 0;
-	}
-	
-}
+
 
 .photo-overlay {
 	position: absolute;
@@ -133,17 +135,30 @@ main {
 	.absolute {
 		top: -115px;
 		left: -4px;
+		
+		@media (max-width: 768px) {
+			position: relative;
+			top: auto;
+			left: auto;
+			margin: 0 auto;
+		}
 	}
 }
 
 // Section 6
 .mls {
 	background-color: white;
+    min-height: 470px;
 }
 
 // Section 7
 .what-else {
 	background-color: $gray;
+	padding-top: 7em;
+	
+	.icons {
+        padding-top: 5em;
+	}
 	
 	.quote {
 		color: $blue;

@@ -458,7 +458,7 @@ td, th { padding: 0; }
 --------------------------------------------------------------*/
 * { box-sizing: border-box; }
 
-body { min-width: 320px; font-size: 100%; font-family: "Raleway", Verdana, Arial; font-weight: 400; }
+body { min-width: 320px; font-size: 100%; font-family: "Open Sans", serif, Helvetica; font-weight: 400; }
 
 a { color: #03263d; -webkit-transition: color 200ms; transition: color 200ms; }
 
@@ -491,7 +491,7 @@ h6 { font-size: 1.25em; }
 
 @media (max-width: 768px) { h6 { font-size: 1em; } }
 
-h1, h2, h3, h4, h5, h6 { font-family: "Open Sans", serif, Helvetica; font-weight: 200; }
+h1, h2, h3, h4, h5, h6 { font-family: "Raleway", Verdana, Arial; font-weight: 200; }
 
 /* Color classes */
 .blue { color: #03263d; }
@@ -523,7 +523,7 @@ img.right { float: right; margin: 1em 0 1em 1em; }
 img.top { margin-top: 0; }
 
 /* Buttons */
-.btn { padding: 17px 75px; font-family: "Open Sans", serif, Helvetica; font-size: 1.5em; font-weight: 700; -webkit-appearance: none; position: relative; text-transform: uppercase; background: white; color: #03263d; border: 2px solid #62cbe9; -webkit-transition: all linear 0.3s; transition: all linear 0.3s; text-decoration: none; }
+.btn { padding: 17px 75px; font-family: "Raleway", Verdana, Arial; font-size: 1.5em; font-weight: 700; -webkit-appearance: none; position: relative; text-transform: uppercase; background: white; color: #03263d; border: 2px solid #62cbe9; -webkit-transition: all linear 0.3s; transition: all linear 0.3s; text-decoration: none; }
 
 .btn.lightblue { background: transparent; border-color: #62cbe9; }
 
@@ -550,13 +550,11 @@ img.top { margin-top: 0; }
 
 .scrollArea .scrollCircle { position: relative; margin: 0 auto; width: 125px; height: 125px; background: white; border-radius: 50%; border: 7px solid #f1f1f3; padding: 7px; -webkit-transition: background 0.3s linear; transition: background 0.3s linear; }
 
-.scrollArea .scrollCircle:hover { background: #f1f1f3; }
+.scrollArea .scrollCircle:hover { background: #f1f1f3; cursor: pointer; }
 
 .scrollArea .scrollCircle:after { content: ''; width: 135px; height: 64px; background: white; position: absolute; top: 55px; left: -11px; }
 
 .scrollArea .scrollCircle .icon { position: relative; top: calc(50% - 20px); text-align: center; color: #62cbe9; }
-
-.scrollArea .scrollCircle:hover { cursor: pointer; }
 
 /*--------------------------------------------------------------
 # Layout

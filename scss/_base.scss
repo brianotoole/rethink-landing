@@ -221,6 +221,7 @@ img {
 		
 		&:hover {
 			background: $gray;
+			cursor: pointer;
 		}
 		
 		&:after { //cover up the border below
@@ -239,9 +240,6 @@ img {
 			text-align: center;
 			color: $lightblue;
 		}
-		
-		&:hover {
-			cursor: pointer;
-		}
+
 	}
 }

@@ -71,6 +71,16 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 200;
 }
 
+/* Icon fonts */
+.icon-ok {
+	color: $blue;
+    position: absolute;
+    
+     ~ li {
+	    margin-left: 3em;
+    }
+}
+
 /* Color classes */
 .blue { color: #03263d; } //brand main
 .black { color: #232324; } //accent
@@ -226,7 +236,6 @@ img {
 		transition: background 0.3s linear;
 		
 		&:hover {
-			background: $gray;
 			cursor: pointer;
 		}
 		
@@ -240,12 +249,39 @@ img {
 		    left: -11px;
 		}
 		
-		.icon {
-			position: relative;
-			top: calc(50% - 20px);
+		.icon-down {
+			position: absolute;
+			top: calc(50% - 45px);
+			left: calc(25% - 17.5px);
 			text-align: center;
 			color: $lightblue;
+			font-size: 4em;
+			z-index: 1004;
+			transition: all 0.3s ease;
+			
+			&:hover {
+				color: $blue;
+				animation: pulse 1s infinite;
+			}
 		}
 
 	}
+}
+
+/* Animations */
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.075);
+    transform: scale3d(1.05, 1.05, 1.075);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }

@@ -101,7 +101,7 @@ li {
 	line-height: 1.5;
 	margin: 1.5em 0;
 	list-style-type: none;
-	color: $green;
+	color: $blue;
 }
 
 img {
@@ -172,11 +172,15 @@ img {
 	padding-left: 20px;
 }
 
+.absolute {
+	position: absolute;
+}
+
 .centered {
-	max-width: 75%;
+	max-width: 60%;
 	margin: 0 auto;
-	padding-top: 4em;
-	padding-bottom: 4em;
+	padding-top: 2em;
+	padding-bottom: 1em;
 	text-align: center;
 	
 	@media (max-width: 768px) {
@@ -230,7 +234,7 @@ img {
 		    height: 64px;
 		    background: white; //same as section's color
 		    position: absolute;
-		    top: 55px;
+		    top: 56px;
 		    left: -11px;
 		}
 		

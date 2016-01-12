@@ -512,7 +512,7 @@ p + p { margin-top: 1em; }
 
 ul { margin: 1em 0; padding-left: 0.7em; list-style-position: inside; }
 
-li { line-height: 1.5; margin: 1.5em 0; list-style-type: none; color: #6fb860; }
+li { line-height: 1.5; margin: 1.5em 0; list-style-type: none; color: #03263d; }
 
 img { max-width: 100%; height: auto; }
 
@@ -538,7 +538,9 @@ img.top { margin-top: 0; }
 /* Major classes */
 .contain { height: 100%; max-width: 1100px; margin-left: auto; margin-right: auto; padding-right: 20px; padding-left: 20px; }
 
-.centered { max-width: 75%; margin: 0 auto; padding-top: 4em; padding-bottom: 4em; text-align: center; }
+.absolute { position: absolute; }
+
+.centered { max-width: 60%; margin: 0 auto; padding-top: 2em; padding-bottom: 1em; text-align: center; }
 
 @media (max-width: 768px) { .centered { max-width: 100%; } }
 
@@ -552,14 +554,14 @@ img.top { margin-top: 0; }
 
 .scrollArea .scrollCircle:hover { background: #f1f1f3; cursor: pointer; }
 
-.scrollArea .scrollCircle:after { content: ''; width: 135px; height: 64px; background: white; position: absolute; top: 55px; left: -11px; }
+.scrollArea .scrollCircle:after { content: ''; width: 135px; height: 64px; background: white; position: absolute; top: 56px; left: -11px; }
 
 .scrollArea .scrollCircle .icon { position: relative; top: calc(50% - 20px); text-align: center; color: #62cbe9; }
 
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-header { width: 100%; min-width: 320px; height: 120px; position: fixed; z-index: 1003; top: 0; background-color: white; box-shadow: 0 4px rgba(0, 0, 0, 0.01); opacity: 0.85; }
+header { width: 100%; min-width: 320px; height: 120px; position: fixed; z-index: 1009; top: 0; background-color: white; box-shadow: 0 4px rgba(0, 0, 0, 0.01); opacity: 0.85; }
 
 header.small { -webkit-transform: translateY(-90px); -ms-transform: translateY(-90px); transform: translateY(-90px); }
 
@@ -567,7 +569,7 @@ header.small { -webkit-transform: translateY(-90px); -ms-transform: translateY(-
 
 main { position: relative; background-color: #03263d; }
 
-.intro { background-image: -webkit-linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.01)), url("../img/hero.jpg"); background-image: linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.01)), url("../img/hero.jpg"); background-size: cover; background-position: center center; min-height: 515px; margin-bottom: 30px; }
+.intro { background-image: -webkit-linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.01)), url("../img/bg_hero.jpg"); background-image: linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.01)), url("../img/bg_hero.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat; min-height: 515px; margin-bottom: 30px; }
 
 .intro.hasIndention:after { bottom: -60px; }
 
@@ -577,23 +579,29 @@ main { position: relative; background-color: #03263d; }
 
 .text { color: #232324; background-color: white; }
 
-.text span { font-size: 1.25em; }
+.text h3 { color: #616161; }
 
-.scroll { color: #232324; background-color: #03263d; background-image: -webkit-linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.8)), url("https://placeimg.com/1100/480/nature"); background-image: linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.8)), url("https://placeimg.com/1100/480/nature"); background-size: cover; background-position: center center; min-height: 250px; }
+.scroll { color: #232324; background-color: #03263d; background-image: url("../img/bg_scroll.jpg"); background-size: cover; background-position: center top; background-repeat: no-repeat; min-height: 305px; }
 
 .scroll h4 { color: #6fb860; }
 
 .scroll h3 { color: white; }
 
-.zillow { position: relative; background: white; }
+.zillow { position: relative; background: white; min-height: 755px; }
 
-.padded { padding: 3em; }
+.zillow .contain { padding-top: 5em; }
 
-@media (max-width: 768px) { .padded { padding: 0; } }
+.onTop { position: absolute; z-index: 1004; }
 
-.prospects { background-color: #f1f1f3; }
+@media (max-width: 768px) { .onTop { padding: 0; } }
+
+.photo-overlay { position: absolute; background-image: url("../img/screenshot_prospectmanager_large.png"); background-repeat: no-repeat; background-position: center 105px; width: 100%; height: 100%; min-height: 505px; z-index: 1003; }
+
+.prospects { background-color: #f1f1f3; padding-top: 6em; min-height: 810px; }
 
 .prospects h3 { color: #62cbe9; }
+
+.prospects .absolute { top: -115px; left: -4px; }
 
 .mls { background-color: white; }
 

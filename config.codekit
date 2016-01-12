@@ -11,6 +11,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/bg_hero.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 153901,
+		"inputAbbreviatedPath": "\/img\/bg_hero.jpg",
+		"outputAbbreviatedPath": "\/img\/bg_hero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/bg_scroll.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36929,
+		"inputAbbreviatedPath": "\/img\/bg_scroll.jpg",
+		"outputAbbreviatedPath": "\/img\/bg_scroll.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/favicon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -22,17 +44,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/hero.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 153901,
-		"inputAbbreviatedPath": "\/img\/hero.jpg",
-		"outputAbbreviatedPath": "\/img\/hero.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -40,6 +51,50 @@
 		"initialSize": 2240,
 		"inputAbbreviatedPath": "\/img\/logo.png",
 		"outputAbbreviatedPath": "\/img\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/screenshot_assign.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13744,
+		"inputAbbreviatedPath": "\/img\/screenshot_assign.png",
+		"outputAbbreviatedPath": "\/img\/screenshot_assign.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/screenshot_prospectmanager_large.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33732,
+		"inputAbbreviatedPath": "\/img\/screenshot_prospectmanager_large.png",
+		"outputAbbreviatedPath": "\/img\/screenshot_prospectmanager_large.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/screenshot_prospectmanager_small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16402,
+		"inputAbbreviatedPath": "\/img\/screenshot_prospectmanager_small.png",
+		"outputAbbreviatedPath": "\/img\/screenshot_prospectmanager_small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/screenshot_zillow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26028,
+		"inputAbbreviatedPath": "\/img\/screenshot_zillow.png",
+		"outputAbbreviatedPath": "\/img\/screenshot_zillow.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

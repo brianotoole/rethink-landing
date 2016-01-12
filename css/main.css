@@ -506,9 +506,15 @@ img.top { margin-top: 0; }
 
 .hasIndention:after { content: ''; position: absolute; border-color: #03263d transparent transparent; -webkit-border-image: none; -o-border-image: none; border-image: none; border-style: solid; border-width: 30px 30px 0; bottom: -30px; height: 0; left: 50%; margin-left: -30px; width: 0; z-index: 1000; }
 
-.hasScroll:before { content: ''; display: block; position: relative; margin: 0 auto; width: 125px; height: 125px; background: red; border-radius: 50%; bottom: 62.5px; background: white; border: 7px solid #f1f1f3; padding: 7px; cursor: pointer; opacity: 1; }
+.scrollArea { position: absolute; width: 100%; margin-top: -62.5px; }
 
-.hasScroll:after { content: ''; position: absolute; border-color: #62cbe9 transparent transparent; -webkit-border-image: none; -o-border-image: none; border-image: none; border-style: solid; border-width: 30px 30px 0; top: -10px; height: 0; left: 50%; margin-left: -30px; width: 0; cursor: pointer; z-index: 1000; }
+.scrollArea .scrollCircle { position: relative; margin: 0 auto; width: 125px; height: 125px; background: white; border-radius: 50%; border: 7px solid #f1f1f3; padding: 7px; }
+
+.scrollArea .scrollCircle:after { content: ''; width: 135px; height: 64px; background: white; position: absolute; top: 55px; left: -11px; }
+
+.scrollArea .scrollCircle .icon { text-align: center; color: #62cbe9; }
+
+.scrollArea .scrollCircle:hover { cursor: pointer; }
 
 /*--------------------------------------------------------------
 # Layout

@@ -126,37 +126,39 @@ img {
 	}
 }
 
-.hasScroll {
-	&:before {
-		content: '';
-		display: block;
+.scrollArea {
+	position: absolute;
+	width: 100%;
+	margin-top: -62.5px;
+	
+	.scrollCircle {
 		position: relative;
 		margin: 0 auto;
 		width: 125px;
 		height: 125px;
-		background: red;
-		border-radius: 50%;
-		bottom: 62.5px;
 		background: white;
+		border-radius: 50%;
 		border: 7px solid $gray;
 		padding: 7px;
-		cursor: pointer;
-		opacity: 1;
-	}
-	&:after {
-		content: '';
-		position: absolute;
-		border-color: $lightblue rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-		border-image: none;
-		border-style: solid;
-		border-width: 30px 30px 0;
-		top: -10px;
-	    height: 0;
-	    left: 50%;
-	    margin-left: -30px;
-	    width: 0;
-	    cursor: pointer;
-	    z-index: 1000;
+		
+		&:after { //cover up the border below
+			content: '';
+		    width: 135px;
+		    height: 64px;
+		    background: white; //same as section's color
+		    position: absolute;
+		    top: 55px;
+		    left: -11px;
+		}
+		
+		.icon {
+			text-align: center;
+			color: $lightblue;
+		}
+		
+		&:hover {
+			cursor: pointer;
+		}
 	}
 }
 

@@ -13,9 +13,9 @@ header {
 	box-shadow: 0 2px rgba(0, 0, 0, 0.1);
 	opacity: 0.85;
 	
-	&.small {
-		transform: translateY(-90px);
-	}
+	//&.small {
+		//transform: translateY(-90px);
+	//}
 	
 	img.logo {
         margin-top: 0.5em;
@@ -47,11 +47,15 @@ main {
 	&.hasIndention {
 		&:after {
 			bottom: -60px;
-	}
-}
+	    }
+    }
 	
 	.centered {
-		padding-top: 13em;
+		padding-top: 9.5em;
+		
+		@media (max-width: 768px) {
+			padding-top: 13em;
+		}
 	}
 	
 	h1 {
@@ -79,13 +83,10 @@ main {
 	background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-	min-height: 305px;
+	min-height: 280px;
 	
-	h4 {
-		color: $green;
-	}
 	h3 {
-		color: white;
+		line-height: 1.6em;
 	}
 }
 
@@ -114,17 +115,14 @@ main {
 	}
 }
 
-
-
 .photo-overlay {
 	position: absolute;
 	background-image: url('../img/screenshot_prospectmanager_large.png');
 	background-repeat: no-repeat;
-	background-position: center 78px;
+	background-position: center 63px;
 	width: 100%;
 	height: 100%;
 	min-height: 505px;
-	z-index: 1003;
 	
 	@media (max-width: 768px) {
 		position: relative;
@@ -139,14 +137,10 @@ main {
 .prospects {
 	background-color: $gray;
 	padding-top: 6em;
-	min-height: 810px;
+	min-height: 800px;
 	
 	@media (max-width: 768px) {
 		padding-top: 1em;
-	}
-	
-	h3 {
-		color: $lightblue;
 	}
 	
 	.absolute {
@@ -160,12 +154,30 @@ main {
 			margin: 0 auto;
 		}
 	}
+	
+	.pad {
+        padding-bottom: 0.5em;		
+	}
+	
+	.scrollArea {
+        
+		.scrollCircle {
+            margin: 125px auto auto 185px;
+			
+			&:after {
+				display: none;
+			}
+			
+		}
+	}
 }
 
 // Section 6
 .mls {
 	background-color: white;
     min-height: 470px;
+    padding-top: 4em;
+    padding-bottom: 6em;
     
     .absolute {
 		
@@ -173,6 +185,26 @@ main {
 			position: relative;
 		}
 	}
+	
+	img.left {
+		margin-left: 45px;
+		
+		@media (max-width: 768px) {
+			margin-left: 0;
+		}
+	}
+	
+    .scrollArea {
+        
+        .scrollCircle {
+            margin: 88px auto auto 168px;
+            
+        	&:after {
+	        	background: transparent;
+        	}
+        }
+        
+    }
 }
 
 // Section 7
@@ -185,7 +217,7 @@ main {
 	}
 	
 	.icons {
-        padding-top: 5em;
+        padding-top: 5.5em;
         
         @media (max-width: 768px) {
             padding-top: 1em;
@@ -195,7 +227,9 @@ main {
 	.quote {
 		color: $blue;
 		text-align: center;
-		padding: 3em 0;
+		padding: 2em 0;
+		font-size: 1.13334em;
+		font-weight: 400;
 		
 		@media (max-width: 768px) {
 			padding: 1.5em 0;
@@ -225,6 +259,10 @@ main {
 	span {
 		padding-left: 5px;
 	}
+}
+
+.closerMargin {
+    margin-bottom: 1.125em;
 }
 
 // Footer

@@ -8,7 +8,7 @@
 body {
 	min-width: 320px;
 	font-size: 100%;
-	font-family: $body;
+	font-family: $heading;
 	font-weight: 400;
     overflow-x: hidden;
 }
@@ -28,26 +28,37 @@ a {
 }
 
 /* Typography */
+h1,h2,h3,h4,h5,h6 {
+	font-family: $heading;
+}
 h1 {
-    font-size: 2.5em;
+    font-size: 3.125em;
+    font-weight: 400;
+    line-height: 1.4em;
     @media (max-width: 768px) {
 	    font-size: 2em;
     }
 }
 h2 {
-    font-size: 2.25em;
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 1.4em;
     @media (max-width: 768px) {
 	    font-size: 1.75em;
     }
 }
 h3 {
-    font-size: 2em;
+    font-size: 2.25em;
+    font-weight: 500;
+    line-height: 1.4em;
     @media (max-width: 768px) {
 	    font-size: 1.5em;
     }
 }
 h4 {
-    font-size: 1.75em;
+    font-size: 1.875em;
+    font-weight: 500;
+    line-height: 1.4em;
     color: $blue;
     @media (max-width: 768px) {
 	    font-size: 1.25em;
@@ -55,20 +66,17 @@ h4 {
 }
 h5 {
     font-size: 1.5em;
+    font-weight: 400;
     @media (max-width: 768px) {
 	    font-size: 1.125em;
     }
 }
 h6 {
     font-size: 1.25em;
+    font-weight: 400;
     @media (max-width: 768px) {
 	    font-size: 1em;
     }
-}
-
-h1,h2,h3,h4,h5,h6 {
-	font-family: $heading;
-	font-weight: 200;
 }
 
 /* Icon fonts */
@@ -87,6 +95,8 @@ h1,h2,h3,h4,h5,h6 {
 .lightblue { color: #62cbe9; } //accent
 .green { color: #6fb860; } //accent
 .gray { color: #f1f1f3; } //accent
+.darkgray { color: #616161; } //headings
+.white { color: white; } //headings
 
 p {
 	line-height: 1.5;
@@ -113,16 +123,20 @@ li {
 	margin: 1.5em 0;
 	list-style-type: none;
 	color: $blue;
+	
+	&.contained {
+		max-width: 70%;
+		
+		@media (max-width: 850px) {
+			max-width: 100%;
+		}
+	}
 }
 
 img {
 	max-width: 100%;
 	height: auto;
 	
-	&.left {
-		float: left;
-		margin: 1em 1em 1em 0;
-	}
 	&.right {
 		float: right;
 		margin: 1em 0 1em 1em;
@@ -130,13 +144,18 @@ img {
 	&.top {
 		margin-top: 0;
 	}
+	&.pad-top {
+		padding-top: 1em;
+	}
+	
 }
+
 
 /* Buttons */
 .btn {
-	padding: 22px 75px;
-	font-family: $heading;
-	font-size: 1.5em;
+	padding: 17px 75px;
+	font-family: $button;
+	font-size: 1.875em;
 	font-weight: 700;
 	-webkit-appearance: none;
     position: relative;
@@ -146,6 +165,7 @@ img {
     border: 2px solid $lightblue;
     transition: all linear 0.3s;
     text-decoration: none;
+    z-index: 1004;
     
     &.lightblue {
 		background: transparent;
@@ -189,7 +209,7 @@ img {
 }
 
 .centered {
-	max-width: 60%;
+	max-width: 70%;
 	margin: 0 auto;
 	padding-top: 2em;
 	padding-bottom: 1em;
@@ -251,7 +271,7 @@ img {
 		
 		.icon-down {
 			position: absolute;
-			top: calc(50% - 45px);
+			top: calc(50% - 33.5px);
 			left: calc(25% - 17.5px);
 			text-align: center;
 			color: $lightblue;

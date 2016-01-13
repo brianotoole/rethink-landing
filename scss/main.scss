@@ -4,16 +4,17 @@
 $blue: #03263d; //brand main
 $black: #232324; //accent
 $lightblue: #63cbe7; //accent
+$lighterblue: #18a9e1; // :/ color changed after approval
 $green: #6fb860; //accent
 $darkgreen: #6fb860; //accent
 $gray: #f1f1f3;
 $darkgray: #616161; //headings
 
 // Typography
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|200,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|100,400,500,700');
 
 $heading: 'Raleway', Verdana, Arial;
-$body: 'Open Sans', serif, Helvetica;
+$button: 'Open Sans', serif, Helvetica;
 
 // Vendor
 @import "normalize";

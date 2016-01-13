@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-# Scroll to anchor on click on "scroll btn"
+# Scroll to anchor on click - "scroll btn"
 --------------------------------------------------------------*/
 
 $(document).ready(function() {
@@ -15,4 +15,13 @@ $(document).ready(function() {
 		
 	return false;
    });
+});
+
+/*--------------------------------------------------------------
+# Scroll back to top on click - "back to top btn"
+--------------------------------------------------------------*/
+$('#top').click(function() {
+    return $('html,body').animate({
+        scrollTop: 0
+    }, 600);
 });

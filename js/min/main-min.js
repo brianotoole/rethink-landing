@@ -1,1 +1,1 @@
-$(document).ready(function(){$("a[href*=#]").bind("click",function(t){t.preventDefault();var n=$(this).attr("href");return $("html, body").stop().animate({scrollTop:$(n).offset().top},500,function(){location.hash=n}),!1})});
+$(document).ready(function(){$("a[href*=#]").bind("click",function(t){t.preventDefault();var o=$(this).attr("href");return $("html, body").stop().animate({scrollTop:$(o).offset().top},500,function(){location.hash=o}),!1})}),$("#top").click(function(){return $("html,body").animate({scrollTop:0},600)});

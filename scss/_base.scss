@@ -184,6 +184,11 @@ img {
 	    }
     }
     
+    @media (max-width: 860px) {
+	    padding-left: 45px;
+	    padding-right: 45px;
+    }
+    
 	@media (max-width: 768px) {
 		width: 100%;
 		display: block;
@@ -217,6 +222,20 @@ img {
 	
 	@media (max-width: 768px) {
 		max-width: 100%;
+	}
+}
+
+.title {
+	@media (max-width: 768px) {
+		text-align: center;
+	}	
+}
+.mobile-center {
+	@media (max-width: 768px) {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+		text-align: center;
 	}
 }
 

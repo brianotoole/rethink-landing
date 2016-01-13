@@ -100,7 +100,7 @@ main {
 		padding-top: 5em;
 		
         @media (max-width: 768px) {
-		    padding-top: 1em;
+		    padding-top: 4em;
 	    }
 	}
 	
@@ -125,10 +125,11 @@ main {
 	min-height: 505px;
 	
 	@media (max-width: 768px) {
-		position: relative;
-		background-position: top center;
-		background-size: contain;
-		min-height: 115px;
+		display: none;
+		//position: relative;
+		//background-position: top center;
+		//background-size: contain;
+		//min-height: 115px;
 	}
 
 }
@@ -190,7 +191,8 @@ main {
 		margin-left: 45px;
 		
 		@media (max-width: 768px) {
-			margin-left: 0;
+			margin: auto;
+			//width: 75%; //fixed width so scroll btn looks centered on mobile
 		}
 	}
 	
@@ -198,6 +200,11 @@ main {
         
         .scrollCircle {
             margin: 88px auto auto 168px;
+			
+			@media (max-width: 768px) {
+				margin-left: auto;
+				margin-right: auto;
+			}
             
         	&:after {
 	        	background: transparent;
@@ -220,7 +227,7 @@ main {
         padding-top: 5.5em;
         
         @media (max-width: 768px) {
-            padding-top: 1em;
+            padding-top: 4em;
         }
 	}
 	
@@ -280,7 +287,7 @@ footer {
 		margin: 0 auto -50px auto;
 		
 		@media (max-width: 768px) {
-			padding-bottom: 2em;
+			padding-bottom: 3em;
 		}
 	
 	}

@@ -552,7 +552,7 @@ img.top { margin-top: 0; }
 img.pad-top { padding-top: 1em; }
 
 /* Buttons */
-.btn { padding: 17px 75px; font-family: "Open Sans", serif, Helvetica; font-size: 1.6em; font-weight: 700; -webkit-appearance: none; position: relative; text-transform: uppercase; background: white; color: #03263d; border: 2px solid #63cbe7; -webkit-transition: all linear 0.3s; transition: all linear 0.3s; text-decoration: none; z-index: 1004; }
+.btn { padding: 17px 75px; font-family: "Open Sans", serif, Helvetica; font-size: 1.6em; font-weight: 700; letter-spacing: 1px; -webkit-appearance: none; position: relative; text-transform: uppercase; background: white; color: #03263d; border: 2px solid #63cbe7; -webkit-transition: all linear 0.3s; transition: all linear 0.3s; text-decoration: none; z-index: 1004; }
 
 .btn.lightblue { background: transparent; border-color: #63cbe7; }
 
@@ -620,7 +620,9 @@ header img.logo { margin-top: 0.5em; }
 
 main { position: relative; background-color: #03263d; }
 
-.intro { background-image: -webkit-linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.01)), url("../img/bg_hero.jpg"); background-image: linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.01)), url("../img/bg_hero.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat; min-height: 515px; margin-bottom: 30px; }
+.intro { background-image: -webkit-linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.01)), url("../img/bg_hero.jpg"); background-image: linear-gradient(rgba(3, 38, 61, 0.7), rgba(3, 38, 61, 0.01)), url("../img/bg_hero.jpg"); background-attachment: fixed; background-size: cover; background-position: 100% 100%; background-repeat: no-repeat; min-height: 515px; margin-bottom: 30px; }
+
+@media (max-width: 768px) { .intro { background-attachment: scroll; } }
 
 .intro.hasIndention:after { bottom: -60px; }
 
@@ -634,7 +636,9 @@ main { position: relative; background-color: #03263d; }
 
 .text h3 { color: #616161; }
 
-.scroll { color: #232324; background-color: #03263d; background-image: url("../img/bg_scroll.jpg"); background-size: cover; background-position: center top; background-repeat: no-repeat; min-height: 280px; }
+.scroll { color: #232324; background-color: #03263d; background-image: url("../img/bg_scroll.jpg"); background-attachment: fixed; background-size: cover; background-position: 100% 100%; background-repeat: no-repeat; min-height: 280px; }
+
+@media (max-width: 768px) { .scroll { background-attachment: scroll; } }
 
 .scroll h3 { line-height: 1.6em; }
 
